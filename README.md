@@ -23,7 +23,7 @@ An API to get monster information from "Ragnarok Online (Pre-renewal)" game.
             "ptBr": "Portuguese name",
             "en": "English name"
         },
-        id: "monster id"
+        "id": "monster id"
     }
 ]
 ```
@@ -44,14 +44,14 @@ An API to get monster information from "Ragnarok Online (Pre-renewal)" game.
             "ptBr": "Portuguese name",
             "en": "English name"
         },
-        id: "monster id"
+        "id": "monster id"
     },
     {
         "name": {
             "ptBr": "Portuguese name",
             "en": "English name"
         },
-        id: "monster id"
+        "id": "monster id"
     }
 ]
 ```
@@ -71,47 +71,47 @@ An API to get monster information from "Ragnarok Online (Pre-renewal)" game.
         "ptBr": "Portuguese name",
         "en": "English name"
     },{
-        info: {
+        "info": {
             "stats": {
                 "atk": {
-                    "min": Number,
-                    "max": Number
+                    "min": "Number",
+                    "max": "Number"
                 },
                 "exp": {
-                    "base": Number,
-                    "job": Number
+                    "base": "Number",
+                    "job": "Number"
                 },
                 "element": {
-                    "name": String,
-                    "level": Number
+                    "name": "String",
+                    "level": "Number"
                 },
-                "level": Number,
-                "hp": Number,
-                "def": Number,
-                "mdef":Number,
-                "agi": Number,
-                "vit": Number,
-                "int": Number,
-                "dex": Number,
-                "luk": Number,
-                "flee": Number,
-                "hit": Number,
-                "race": String,
-                "size": String
+                "level": "Number",
+                "hp": "Number",
+                "def": "Number",
+                "mdef":"Number",
+                "agi": "Number",
+                "vit": "Number",
+                "int": "Number",
+                "dex": "Number",
+                "luk": "Number",
+                "flee": "Number",
+                "hit": "Number",
+                "race": "String",
+                "size": "String"
             },
             "others": {
-                "agressive": Boolean,
-                "helpAllies": Boolean,
-                "castDetect": Boolean,
-                "looter": Boolean,
-                "changeTarget": Boolean,
-                "positionFixed": Boolean,
-                "hidenDetect": Boolean,
-                "antiSteal": Boolean,
-                "boss": Boolean
+                "agressive": "Boolean",
+                "helpAllies": "Boolean",
+                "castDetect": "Boolean",
+                "looter": "Boolean",
+                "changeTarget": "Boolean",
+                "positionFixed": "Boolean",
+                "hidenDetect": "Boolean",
+                "antiSteal": "Boolean",
+                "boss": "Boolean"
             },
-            "drops": Array,
-            "respawn": Array
+            "drops": [],
+            "respawn": []
         }
     }
     id: "monster id"
