@@ -1,21 +1,24 @@
 ## Ragnarok Database API
-----
+
+---
+
 An API to get monster information from "Ragnarok Online (Pre-renewal)" game.
 
 **Base URL** `https://ragnarokapi.bravan.cloudns.cl`
 
 ### Methods:
-  
+
 #### `GET` List Monsters
 
 `BaseURL/monsters/?page=value&limit=value`
 
-| Query   | Type   | Description        |
-|---------|--------|--------------------|
-| `page`  | number | set current page   |
-| `limit` | number | set indexs per page|
+| Query   | Type   | Description         |
+| ------- | ------ | ------------------- |
+| `page`  | number | set current page    |
+| `limit` | number | set indexs per page |
 
 **Response:**
+
 ```json
 [
     {
@@ -33,10 +36,11 @@ An API to get monster information from "Ragnarok Online (Pre-renewal)" game.
 `BaseURL/monster/find/?search=value`
 
 | Query    | Type   | Description                  |
-|----------|--------|------------------------------|
+| -------- | ------ | ---------------------------- |
 | `search` | string | monster name or partial name |
 
 **Response:**
+
 ```json
 [
     {
@@ -61,60 +65,60 @@ An API to get monster information from "Ragnarok Online (Pre-renewal)" game.
 `BaseURL/monster/info/:id`
 
 | Query | Type   | Description |
-|-------|--------|-------------|
+| ----- | ------ | ----------- |
 | `id`  | number | monster id  |
 
 **Response:**
+
 ```json
 {
     "name": {
         "ptBr": "Portuguese name",
         "en": "English name"
-    },{
-        "info": {
-            "stats": {
-                "atk": {
-                    "min": "Number",
-                    "max": "Number"
-                },
-                "exp": {
-                    "base": "Number",
-                    "job": "Number"
-                },
-                "element": {
-                    "name": "String",
-                    "level": "Number"
-                },
-                "level": "Number",
-                "hp": "Number",
-                "def": "Number",
-                "mdef":"Number",
-                "agi": "Number",
-                "vit": "Number",
-                "int": "Number",
-                "dex": "Number",
-                "luk": "Number",
-                "flee": "Number",
-                "hit": "Number",
-                "race": "String",
-                "size": "String"
+    },
+    "info": {
+        "stats": {
+            "atk": {
+                "min": "Number",
+                "max": "Number"
             },
-            "others": {
-                "agressive": "Boolean",
-                "helpAllies": "Boolean",
-                "castDetect": "Boolean",
-                "looter": "Boolean",
-                "changeTarget": "Boolean",
-                "positionFixed": "Boolean",
-                "hidenDetect": "Boolean",
-                "antiSteal": "Boolean",
-                "boss": "Boolean"
+            "exp": {
+                "base": "Number",
+                "job": "Number"
             },
-            "drops": [],
-            "respawn": []
-        }
-    }
-    id: "monster id"
+            "element": {
+                "name": "String",
+                "level": "Number"
+            },
+            "level": "Number",
+            "hp": "Number",
+            "def": "Number",
+            "mdef": "Number",
+            "agi": "Number",
+            "vit": "Number",
+            "int": "Number",
+            "dex": "Number",
+            "luk": "Number",
+            "flee": "Number",
+            "hit": "Number",
+            "race": "String",
+            "size": "String"
+        },
+        "others": {
+            "agressive": "Boolean",
+            "helpAllies": "Boolean",
+            "castDetect": "Boolean",
+            "looter": "Boolean",
+            "changeTarget": "Boolean",
+            "positionFixed": "Boolean",
+            "hidenDetect": "Boolean",
+            "antiSteal": "Boolean",
+            "boss": "Boolean"
+        },
+        "drops": [],
+        "respawn": []
+    },
+    "id": "monster id"
 }
 ```
 
@@ -123,7 +127,7 @@ An API to get monster information from "Ragnarok Online (Pre-renewal)" game.
 `BaseURL/monster/image/:id`
 
 | Query | Type   | Description |
-|-------|--------|-------------|
+| ----- | ------ | ----------- |
 | `id`  | number | monster id  |
 
 **Response:**
