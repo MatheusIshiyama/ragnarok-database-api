@@ -27,7 +27,7 @@ module.exports = {
     },
 
     async monsterInfo(request, response) {
-        const monster = await monsterModel.findOne({ id: request.params.id });
+        const monster = await monsterModel.findOne({ id: request.params.id }, { _id: false });
 
         if (monster) {
             response.json(monster);
@@ -37,7 +37,7 @@ module.exports = {
     },
 
     async monsterGif(request, response) {
-        const image = await imageModel.findOne({ id: request.params.id });
+        const image = await imageModel.findOne({ id: request.params.id }, { _id: false });
         if (image) {
             const img = Buffer.from(image.img.data, "base64");
             response.writeHead(200, {
