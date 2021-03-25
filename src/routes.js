@@ -25,7 +25,7 @@ routes.get('/monster/info/:id', (request, response) => {
 })
 
 //* show monster gif
-routes.get("/monster/img/:id", (request, response) => {
+routes.get("/monster/image/:id", (request, response) => {
     monsterController.monsterGif(request, response);
 });
 
