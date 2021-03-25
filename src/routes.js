@@ -7,7 +7,7 @@ routes.get("/", (req, res) => {
     const ping = new Date();
     ping.setHours(ping.getHours() - 3);
     console.log(`Ping at: ${ping.getUTCHours()}:${ping.getUTCMinutes()}:${ping.getUTCSeconds()}`);
-    res.send("Ragnarok Pre Renewal database developed by Bravan").status(200);
+    res.send("Ragnarok Pre Renewal database developed by Matheus Ishiyama").status(200);
 });
 
 //* list monsters
