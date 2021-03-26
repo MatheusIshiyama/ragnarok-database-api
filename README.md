@@ -4,13 +4,13 @@
 
 An API to get monster information from "Ragnarok Online (Pre-renewal)" game.
 
-**Base URL** `https://ragnarokapi.bravan.cloudns.cl`
+**Base URL endpoint** `https://ragnarokapi.bravan.cloudns.cl`
 
 ### Methods:
 
 #### `GET` List Monsters
 
-`BaseURL/monsters/?page=value&limit=value`
+**endpoint:** `BaseURL/monsters/?page=value&limit=value`
 
 | Query   | Type   | Description         |
 | ------- | ------ | ------------------- |
@@ -33,7 +33,7 @@ An API to get monster information from "Ragnarok Online (Pre-renewal)" game.
 
 #### `GET` Monster search
 
-`BaseURL/monster/find/?search=value`
+**endpoint:** `BaseURL/monster/find/?search=value`
 
 | Query    | Type   | Description                  |
 | -------- | ------ | ---------------------------- |
@@ -62,7 +62,7 @@ An API to get monster information from "Ragnarok Online (Pre-renewal)" game.
 
 #### `GET` Monster info
 
-`BaseURL/monster/info/:id`
+**endpoint:** `BaseURL/monster/info/:id`
 
 | Query | Type   | Description |
 | ----- | ------ | ----------- |
@@ -124,7 +124,7 @@ An API to get monster information from "Ragnarok Online (Pre-renewal)" game.
 
 #### `GET` Monster image
 
-`BaseURL/monster/image/:id`
+**endpoint:** `BaseURL/monster/image/:id`
 
 | Query | Type   | Description |
 | ----- | ------ | ----------- |
