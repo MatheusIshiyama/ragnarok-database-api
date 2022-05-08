@@ -33,7 +33,7 @@ An API to get monster information from "Ragnarok Online (Pre-renewal)" game.
 
 #### `GET` Monster search
 
-**endpoint:** `BaseURL/monster/find/?search=value`
+**endpoint:** `BaseURL/monsters/find/?search=value`
 
 | Query    | Type   | Description                  |
 | -------- | ------ | ---------------------------- |
@@ -62,7 +62,7 @@ An API to get monster information from "Ragnarok Online (Pre-renewal)" game.
 
 #### `GET` Monster info
 
-**endpoint:** `BaseURL/monster/info/:id`
+**endpoint:** `BaseURL/monsters/info/:id`
 
 | Query | Type   | Description |
 | ----- | ------ | ----------- |
@@ -124,7 +124,7 @@ An API to get monster information from "Ragnarok Online (Pre-renewal)" game.
 
 #### `GET` Monster image
 
-**endpoint:** `BaseURL/monster/image/:id`
+**endpoint:** `BaseURL/monsters/image/:id`
 
 | Query | Type   | Description |
 | ----- | ------ | ----------- |
