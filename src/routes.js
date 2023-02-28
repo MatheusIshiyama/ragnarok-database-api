@@ -20,12 +20,12 @@ routes.get('/monsters/find', (request, response) => {
 }) 
 
 //* show monster info
-routes.get('/monster/info/:id', (request, response) => {
+routes.get('/monsters/info/:id', (request, response) => {
     monsterController.monsterInfo(request, response)
 })
 
 //* show monster gif
-routes.get("/monster/image/:id", (request, response) => {
+routes.get("/monsters/image/:id", (request, response) => {
     monsterController.monsterGif(request, response);
 });
 
